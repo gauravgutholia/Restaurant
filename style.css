@@ -56,6 +56,9 @@ body {
   display: none;
 }
 @media screen and (max-width: 600px) {
+  .topnav {
+    position: relative;
+  }
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -67,6 +70,9 @@ body {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
+  .topnav {
+    position: relative;
+  }
   .topnav.responsive {
     position: relative;
   }
@@ -338,47 +344,7 @@ body {
   margin-bottom: 0px;
 }
 /* ==================END OF SOIAL ICON ======================*/
-/* =========================Numbers=================== */
-/*.numberl {
-  text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-    url("images/tomoto.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  object-fit: cover;
-  padding: 60px 0;
-  color: white;
-}
-#numberl {
-  min-height: 40vh;
-}
-.numbers p {
-  font-size: 30px;
-  font-weight: bold;
-}
-.numbers:hover {
-  color: #c5aa6a;
-}
-.numbers .fas {
-  font-size: 60px;
-  margin: 20px 0;
-}
-.numbers h3 {
-  text-transform: uppercase;
-}
-@media screen and (min-width: 576) {
-  .numberl {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 992px) {
-  .numberl {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}*/
-/* ======================END OF NUMBERS============== */
+
 /* ========================CARDS===================== */
 .title-text {
   color: #c5aa6a;
