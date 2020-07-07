@@ -1,0 +1,551 @@
+body {
+  margin: 0px;
+}
+/*=====================HEADING======================*/
+.contain1 {
+  background-image: url("images/food.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 50vw;
+  background-attachment: fixed;
+  object-fit: cover;
+
+  width: 100%;
+  margin: 0;
+}
+
+/*navbar*/
+
+.topnav {
+  background-color: #c5aa6a;
+
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: inline-block;
+
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid #c5aa6a;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  /* background-color: #4caf50;*/
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*navbar complete*/
+/*title*/
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+.title {
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 5rem;
+}
+.header-btn {
+  font-family: "Lobster", cursive;
+  text-shadow: 1px 0 #232931;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 200px;
+  background: orange;
+  border: 20px solid orange;
+}
+.header-btn:hover {
+  background: white;
+  color: orange;
+  border: none;
+  border: 20px solid white;
+}
+.pulsate {
+  -webkit-animation: pulse 3s infinite ease-in-out;
+  -o-animation: pulse 3s infinite ease-in-out;
+  -ms-animation: pulse 3s infinite ease-in-out;
+  -moz-animation: pulse 3s infinite ease-in-out;
+  animation: pulse 3s infinite ease-in-out;
+}
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contain1 {
+    background-image: url("images/food2.jpg");
+    /* left: -100px; */
+  }
+  .title {
+    font-family: "Lobster", cursive;
+    text-shadow: 3px 0 #232931;
+    font-size: 4rem;
+  }
+}
+
+#wc {
+  display: inline-block;
+  margin-top: 100px;
+  width: 300px;
+  height: 500px;
+  opacity: 0.8;
+  padding: 55px;
+  background-color: #c5aa6a;
+}
+.wc-text {
+  color: white;
+}
+
+@media screen and (max-width: 1050px) {
+  #wc {
+    visibility: hidden;
+  }
+}
+/*===========================END OF HEADING==========================*/
+/* ======================About us ============================ */
+.about-us {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #c5aa6a;
+}
+#about {
+  padding: 40px;
+}
+.about {
+  margin: 30px 0;
+  display: flex;
+}
+.abou-icon .fas {
+  font-size: 60px;
+  color: #c5aa6a;
+  margin-right: 20px;
+}
+.la {
+  text-transform: capitalize;
+  color: #c5aa6a;
+  font-size: 25px;
+}
+.abou-info {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: black;
+}
+
+.abou-icon:hover .fas,
+.la:hover {
+  transition: transforn 2s ease, color 2s ease;
+  transform: translate(-10px);
+  color: orange;
+  cursor: pointer;
+}
+@media screen and (min-width: 576px) {
+  .about-contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about {
+    flex: 0 0 calc(50% -16px);
+    width: 33%;
+  }
+}
+@media screen and (min-width: 972px) {
+  .about {
+    flex: 0 0 calc(33.3% -16px);
+  }
+}
+/* ============MENU SECTION======= */
+.menu-image {
+  min-height: 60vh;
+  background: url("images/colorful-plate.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.menu-text {
+  min-height: 80vh;
+  align-items: center;
+  background-color: #c5aa6a;
+  columns: black;
+  padding: 40px 0;
+}
+.menu-text-center {
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  padding: 2px 0 2px 0;
+}
+.menu-text h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.menu-text p {
+  margin: 20px 0;
+  line-height: 2;
+}
+.menu-text a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  border-radius: 200px;
+  font-size: bold;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  margin-left: 50px;
+}
+.menu-text a:hover {
+  color: orange;
+  background-color: white;
+  border-radius: 200px;
+}
+@media screen and (min-width: 776px) {
+  .menu {
+    display: flex;
+  }
+  .menu-text {
+    flex: 0 0 30%;
+  }
+  .menu-image {
+    flex: 0 0 70%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .menu {
+    background-color: #c5aa6a;
+  }
+}
+/* ==================END OF MENU ICON====================== */
+/* ===================SOCIAL ICON========================== */
+#social-icon {
+  height: 150px;
+
+  text-align: center;
+  padding: 50px 0 50px 0;
+}
+#social-icon a {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-size: 40px;
+  border-radius: 5px;
+  transition: transform 2sec ease, color 2sec ease;
+  transition-property: all;
+  transition-duration: 2sec;
+  transition-timing-function: ease;
+}
+#social-icon a:hover {
+  transform: translateY(-20px);
+}
+.facebook {
+  color: #3b5998;
+}
+.twiiter {
+  color: #38a1f3;
+}
+.instagram {
+  color: #e1306c;
+}
+.plus {
+  color: #db4a39;
+}
+.foot {
+  background-color: #c5aa6a;
+  text-align: center;
+  margin-top: 100px;
+  color: #ddd;
+  margin-bottom: 0px;
+}
+/* ==================END OF SOIAL ICON ======================*/
+/* =========================Numbers=================== */
+/*.numberl {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url("images/tomoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+  padding: 60px 0;
+  color: white;
+}
+#numberl {
+  min-height: 40vh;
+}
+.numbers p {
+  font-size: 30px;
+  font-weight: bold;
+}
+.numbers:hover {
+  color: #c5aa6a;
+}
+.numbers .fas {
+  font-size: 60px;
+  margin: 20px 0;
+}
+.numbers h3 {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 576) {
+  .numberl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .numberl {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}*/
+/* ======================END OF NUMBERS============== */
+/* ========================CARDS===================== */
+.title-text {
+  color: #c5aa6a;
+  text-align: center;
+}
+#food {
+  padding: 20px;
+}
+.food-container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+.food-card {
+  position: relative;
+  background: linear-gradient(rgba(205, 96, 0, 0.7), rgba(205, 36, 0, 0.7));
+  margin: 20px 0;
+  color: black;
+  overflow: hidden;
+  padding: 3px;
+  border-radius: 16px;
+  border: 1px solid #c5aa6a;
+  box-shadow: 2px 3px 1px 1px #c5aa6a;
+}
+#food img {
+  width: 100%;
+  min-height: 100%;
+  display: block;
+  transition: transform 4s;
+}
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 4s;
+}
+
+.img-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  font-size: 20px;
+  opacity: 0;
+  color: black;
+  transition: opacity 4s;
+}
+.img-text h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.food-card:hover img {
+  opacity: 0.4;
+  transform: scale(1.3);
+}
+.food-card:hover .img-text,
+.food-card:hover .img-footer {
+  opacity: 1;
+}
+.food-btn {
+  display: inline-block;
+  background: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 12px 32px;
+  color: white;
+  font-weight: bold;
+  border-radius: 180px;
+  margin-top: 16px;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  outline: none;
+}
+.food-btn:hover {
+  color: #c5aa6a;
+  background: white;
+  border: black;
+  outline: none;
+}
+@media screen and (min-width: 576px) {
+  .food-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .food-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-column-gap: 16px;
+  }
+}
+/*@media screen and (min-width: 576px) {
+
+  .food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .food-card {
+    flex: 0 0 calc(50% -16px);
+    width: 33%;
+  }
+}
+@media screen and (min-width: 972px) {
+  .food-card {
+    flex: 0 0 calc(33.3% -16px);
+  }
+}*/
+/* ===============================COURSEL========================= */
+#carouselExampleCaptions {
+  background-color: #c5aa6a;
+  margin-top: 180px;
+  object-fit: cover;
+}
+.carousel-inner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 60%;
+
+  border-radius: 16px;
+  border: 1px solid black;
+  box-shadow: 2px 3px 1px 1px black;
+}
+.price {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+/* ================================COURSEL END============================ */
+/* ==================================GALERY SECTION====================== */
+#gallery {
+  padding: 40px;
+  background: white;
+}
+
+.gallery-item {
+  background: linear-gradient(rgba(241, 161, 13) rgb(255, 165, 0));
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+.gallery-item img:hover {
+  opacity: 0.5;
+}
+@media screen and (min-width: 576px) {
+  #gallery-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  #gallery-center {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
